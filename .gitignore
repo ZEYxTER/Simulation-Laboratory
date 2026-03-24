@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+venv/
+
+# C++ / Compiled
+*.o
+*.obj
+*.so
+*.a
+*.lib
+simulationCalculator
+cpp/src/*.o
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Gemini / Local Config
+.gemini/
+.env
