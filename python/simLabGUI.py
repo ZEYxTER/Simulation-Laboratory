@@ -11,7 +11,7 @@ class simLabGUI(tk.Tk):
         
         # --------- Window Geometry --------- #
         self.title("Simulator Lab")
-        self.geometry("1100x800")
+        self.geometry("1100x1200")
         
         # --------- Main Container --------- #
         # This container will hold all our views stacked on top of each other

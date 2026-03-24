@@ -32,11 +32,11 @@ This app should help with calculations of nondimensional numbers, boundary condi
     - General BL graph (x: y+ y: U+) and with given values OUR position (% of wall modelling)
     - Wall Shear Stress
     - Friction coefficient with options: 
-        1. Prandtl (1927) 0.074 Re_x^-0.2
-        2. Granville (1977) 0.0776[log10 Re_x - 1.88]^-2 + 60 Re_x^-1
-        3. Schlichting [2 log10 Re_x - 0.65]^-2.3
-        4. Kempf-Karman (1951) 0.055 Re_x^-0.182
-        5. Schultz-Grunov (1940) 0.427[log10 Re_x - 0.407]^-2.64
+        1. Prandtl (1927) $$\rightarrow C_f = 0.074Re_x^{-0.2}$$
+        2. Granville (1977) $$\rightarrow C_f = 0.0776[log_{10}Re_x - 1.88]^{-2} + 60 Re_x^{-1}$$
+        3. Schlichting $$\rightarrow C_f = [2 log_{10} Re_x - 0.65]^{-2.3}$$
+        4. Kempf-Karman (1951) $$\rightarrow C_f = 0.055 Re_x^{-0.182}$$
+        5. Schultz-Grunov (1940) $$\rightarrow C_f = 0.427[log_{10} Re_x - 0.407]^{-2.64}$$
 
 ### BOUNDARY TAB
 
@@ -45,6 +45,7 @@ This app should help with calculations of nondimensional numbers, boundary condi
 ### Future fun additions
 Area rule to step or stl files
 Inertial calculations to geometry 
+Center of gravity
  ## FEM MODULE
 -- TO BE DESIGNED
  ## CONTROL SYSTEMS MODULE
@@ -78,6 +79,7 @@ The application follows a **Model-View-Controller (MVC)** inspired architecture 
 General gui handling and modular view management.
 ## C++ 
 Calculation workhorse for heavy aerodynamic and structural physics.
+Need to change Makefile, it is not updated.
 
 ## GITHUB inspiration module
 [Simulator Calculator](https://github.com/ZEYxTER/SimulationCalculator)
